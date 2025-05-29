@@ -2,16 +2,17 @@
     <HEAD>
       <TITLE> Digian HomePage - Markenting Digital </TITLE> 
       <LINK REL="stylesheet" HREF="estilo.css">
-    </HEAD>
+        <script src="digianscript.js"></script>
+    </HEAD> 
     <BODY>
       <SECTION NAME="Inicio" ID="Ini">
         <DIV CLASS="Inicio"> <!-- Conatainer Inicio -->
           <DIV CLASS="logo"> Digian </DIV>
           <DIV CLASS="nav">
-            <BUTTON> início </BUTTON>
-            <BUTTON> sobre nós </BUTTON>
-            <BUTTON> serviços </BUTTON>
-            <BUTTON> contatos </BUTTON>
+            <BUTTON> INICIO </BUTTON>
+            <BUTTON onclick="irparaSobre()"> SOBRE NÓS </BUTTON>
+            <BUTTON onclick="irparaServ()"> SERVICOS </BUTTON>
+            <BUTTON onclick="irparaCont()"> CONTATOS </BUTTON>
           </DIV>
             <DIV CLASS="faq"> <BUTTON> FAQ </BUTTON> </DIV>
             <DIV CLASS="imginicio">
@@ -25,9 +26,9 @@
           <BR>
             que vão potencializar a sua marca na Web.
           </P></DIV></DIV></SECTION>
-        <SECTION>
+        <SECTION id="sobre">
         <DIV Class="sobre">
-        <DIV  Class="sobretexto">
+        <DIV  class="sobretexto">
         <H2>Sobre Nós</H2>
         <p>Com mais de 5 anos de experiência de mercado a Digian surgiu como<br>
         uma empresa e hoje se destaca no Brasil<br>
@@ -36,13 +37,13 @@
     <button class="iniciob" id="init"> INICIO</button>
       </DIV>
       <DIV Class="sobreimagem">
-      <IMG src="sobre.png" width="470" height="550">
+      <IMG SRC="sobre.png" width="90%" height="95%" id="isobre">      
       </DIV> 
         </DIV>
         </SECTION>
         <SECTION>
-          <DIV class="serv" id="serviço">
-            <h2>Nossos Serviços</h2>
+          <DIV class="serv" id="serviços">
+            <h2 id="iserv">Nossos Serviços</h2>
             <p>Veja a seguir os serviços oferecidos pela Digian</p>
             <br>
             <DIV class="quadros">
@@ -90,9 +91,9 @@
         <input type="submit" value="Enviar">
         <input type="reset" value="cancelar">
       </form>
-      
+
       <DIV CLASS="imgcontato">
-        <IMG SRC="conato.png" width="70%" height="75%">
+        <IMG SRC="contato.png" width="70%" height="75%" id="icont">
         </DIV>
       </DIV>
     </SECTION>
